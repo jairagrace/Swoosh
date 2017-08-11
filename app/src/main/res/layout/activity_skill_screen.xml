@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beginner_baller_bg"
+    tools:context="jaira.cabarrubias.com.swoosh.user.swoosh.Skill_screen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_am_a"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iama" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/iama"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnbeginner"
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:text="@string/beginner"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+           />
+
+        <Button
+            android:id="@+id/btnballer"
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:text="@string/baller"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+            />
+
+    </GridLayout>>
+
+    <Button
+        android:id="@+id/btnfinish"
+        android:layout_width="330sp"
+        android:layout_height="50sp"
+        android:text="@string/finish"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="btnFinish"/>
+</RelativeLayout>

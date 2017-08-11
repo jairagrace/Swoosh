@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desired_league_bg"
+    tools:context="jaira.cabarrubias.com.swoosh.user.swoosh.League_screen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desired League"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/desiredleague" />
+
+   <GridLayout
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+       android:textColor="@android:color/white"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/desiredleague"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout">
+
+    <Button
+        android:id="@+id/btnmens"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:text="@string/mens"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:onClick="btnMen"/>
+
+
+        <Button
+            android:id="@+id/btnwomens"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="@string/womens"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+           android:onClick="btnWomen"/>
+
+        <Button
+            android:id="@+id/btncoed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="@string/coed"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+           android:onClick="btnCoEd"/>
+
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a:"
+        android:id="@+id/iam"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/iamabegginer"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/iam"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="330sp"
+        android:layout_height="50sp"
+        android:text="@string/next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+       android:onClick="btnNext"/>
+</RelativeLayout>

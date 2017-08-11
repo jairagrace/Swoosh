@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Swoosh</string>
+    <string name="mens">Mens</string>
+    <string name="womens">Womens</string>
+    <string name="coed">Co-Ed</string>
+    <string name="next">NEXT</string>
+    <string name="i_am_a">I am a:</string>
+    <string name="beginner">Beginner</string>
+    <string name="baller">Baller</string>
+    <string name="finish">FINISH</string>
+
+</resources>
